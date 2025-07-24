@@ -14,7 +14,7 @@
 <p> - Gutena Forms: for email handlings</p>
 <p> - WP forms/WP mail: for the forms themselves</p>
 <p> - cars-post-type.php: This is to handle cars as a seperate POST type.</p> 
-<h2> DO NOT. I REPEAT. DO NOT DEACTIVATE THIS IF YOU WANT THIS TO RUN</h2>
+<h2> DO NOT. I REPEAT. DO NOT DEACTIVATE THIS IF YOU WANT TO RUN</h2>
 <h3>3. Themes:</h3>
 <p> - The one you're looking to activate is called Astra child.</p>
 <p>But don't touch anything about Astra itself, or the 2025 theme. There are a few things I imported over</p>
