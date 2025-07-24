@@ -1,0 +1,705 @@
+/**
+Theme Name: Astra child
+Template: astra
+Theme URI: https://wpastra.com/
+Author: Brainstorm Force
+Author URI: https://wpastra.com/about/?utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme
+Description: The Astra WordPress theme is lightning-fast and highly customizable. It has over 1 million downloads and the only theme in the world with 5,700+ five-star reviews! It’s ideal for professional web designers, solopreneurs, small businesses, eCommerce, membership sites and any type of website. It offers special features and templates so it works perfectly with all page builders like Spectra, Elementor, Beaver Builder, etc. Fast performance, clean code, mobile-first design and schema markup are all built-in, making the theme exceptionally SEO-friendly. It’s fully compatible with WooCommerce, SureCart and other eCommerce plugins and comes with lots of store-friendly features and templates. Astra also provides expert support for free users. A dedicated team of fully trained WordPress experts are on hand to help with every aspect of the theme. Try the live demo of Astra: https://zipwp.org/themes/astra/
+Version: 4.11.7
+Requires at least: 5.3
+WC requires at least: 3.0
+WC tested up to: 9.6
+Tested up to: 6.8
+Requires PHP: 5.3
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra
+Domain Path: /languages
+Tags: custom-menu, custom-logo, entertainment, one-column, two-columns, left-sidebar, e-commerce, right-sidebar, custom-colors, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready, blog
+AMP: true
+
+Astra WordPress Theme, Copyright 2020 WPAstra.
+Astra is distributed under the terms of the GNU GPL.
+
+Astra is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of.
+Nicolas Gallagher and Jonathan Neal https://necolas.github.com/normalize.css/
+
+Astra icon font is based on IcoMoon-Free vector icon by Keyamoon.
+IcoMoon-Free vector icon distributed under terms of CC BY 4.0 or GPL. (https://creativecommons.org/licenses/by/4.0/ or https://www.gnu.org/licenses/gpl.html)
+Source: http://keyamoon.com/
+
+Flexibility is a JavaScript polyfill for Flexbox By Jonathan Neal, 10up. (https://github.com/jonathantneal/flexibility)
+Licensed under MIT ( https://github.com/jonathantneal/flexibility/blob/master/LICENSE.md )
+
+Screenshot image is a collage of actual sites created using the Astra WordPress Theme.
+
+Icons used in the Screenshot image are all licensed under Creative Commons ( CC BY 4.0 ) License ( https://fontawesome.com/license/free )
+https://fontawesome.com/v5.15/icons/store?style=solid
+https://fontawesome.com/v5.15/icons/shopping-cart?style=solid
+https://fontawesome.com/v5.15/icons/pen-square?style=solid
+https://fontawesome.com/v5.15/icons/user-tie?style=solid
+https://fontawesome.com/v5.15/icons/user-tie?style=solid
+
+Illustrations used in the Screenshot images are all licensed under Creative Commons ( CC0 ) License ( https://gumroad.com/l/humaaans )
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/standing-24.png
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/sitting-2.png
+
+Hand-drawn illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/girl-with-image-container.png
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/boy-with-code-container.png
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/web-browser.png
+
+The same site as screenshot can be imported from here https://websitedemos.net/web-design-agency-08/.
+
+For more information, refer to this document on how to create a page like in the screenshot - https://wpastra.com/docs/replicating-the-screenshot/.
+
+Astra default breadcrumb is based on Breadcrumb Trail by Justin Tadlock. (https://github.com/justintadlock/breadcrumb-trail)
+Breadcrumb Trail is distributed under the terms of the GNU GPL v2 or later.
+
+Astra local fonts feature is based on Webfonts Loader by WordPress Themes Team (WPTT). (https://github.com/WPTT/webfont-loader)
+Licensed under MIT ( https://github.com/WPTT/webfont-loader/blob/master/LICENSE )
+
+/* Note: The CSS files are loaded from assets/css/ folder. */
+
+/* Header */
+.site-header {
+  background-color: #d60000;
+  padding: 1rem 0;
+  color: white;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.utas-logo {
+  height: 40px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/* ===== Main Footer ===== */
+.site-footer {
+  background-color: #111;
+  color: #eee;
+  padding-top: 2rem;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-left .footer-logo {
+  height: 100px;
+}
+
+.footer-right {
+  text-align: left;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem 1rem; /* ⬅️ 底部 padding 改小 */
+}
+
+.footer-address {
+  margin: 0.25rem 0 0.5rem; /* ⬅️ 更紧凑 */
+}
+
+.footer-socials {
+  margin-top: 0.5rem; /* ⬅️ 原来是 1rem，缩小 */
+}
+
+.footer-follow-label {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+
+
+.footer-socials a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  color: #d60000;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+
+.footer-copy {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+.btn-show-more {
+  display: inline-block;
+  background-color: #d60000;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 2rem; /* ✅ 增加顶部间距 */
+}
+
+.btn-show-more:hover {
+  background-color: #b40000;
+}
+
+/* ===== Footer Sponsors Section ===== */
+.footer-sponsors {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background-color: #f4f4f4;
+  border-top: 2px solid #ddd;
+}
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sponsor-box {
+  flex: 1 0 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 180px;
+  max-width: 24%;
+  box-sizing: border-box;
+}
+
+.sponsor-box-inner {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.sponsor-img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sponsor-logo {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .sponsor-box {
+    flex: 1 0 48%;
+    max-width: 48%;
+  }
+}
+@media (max-width: 480px) {
+  .sponsor-box {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+/* ========== Basic ========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  
+  
+  /* ========== Hero Banner ========== */
+  .hero-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+  }
+  
+  /* ========== About Section ========== */
+  .about-us {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f8f8f8;
+  }
+  
+  .about-us h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    text-align: center;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    width: 220px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    margin: 0;
+    color: #d60000;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  
+  /* ========== Competition Section ========== */
+  .competition {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  /* ========== Blog Section ========== */
+  .blogs {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/blog.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* 可选：加一层深色遮罩增加文字对比度 */
+  .blogs::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  
+  
+  .blog-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-card {
+    width: 250px;
+    height: 160px;
+    background-color: #ddd;
+    border-radius: 8px;
+  }
+  
+  /* ========== Show More Button ========== */
+  .btn-show-more {
+    display: inline-block;
+    background-color: #d60000;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-show-more:hover {
+    background-color: #b40000;
+  }
+  
+  
+
+  /* ========== Section Images Crop ========== */
+.section-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+/* ===============Past Cars Page ========== */
+
+/* selector*/
+
+.year-selector {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.year-selector label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.year-selector select {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.year-block {
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #ddd;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.year-block h2 {
+  color: #d60000;
+  margin-bottom: 1rem;
+}
+
+
+/* past cars main part*/
+
+.year-header {
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+  background-color: transparent; /* ⛔ 不设背景 */
+  position: relative;
+}
+
+.year-header .container.with-bg {
+  background-color: #ccc; /* ✅ 背景放这 */
+  border-radius: 10px;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+
+.year-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-arrow.left {
+  left: 1rem;
+}
+
+.nav-arrow.right {
+  right: 1rem;
+}
+
+/* Specification Section */
+.spec-section {
+  background-color: white;
+  padding: 3rem 1rem;
+}
+
+.spec-title {
+  color: #d60000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.spec-intro {
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.spec-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.spec-text {
+  flex: 1 1 60%;
+  line-height: 1.8;
+}
+
+.spec-image {
+  flex: 1 1 35%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spec-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.spec-thankyou {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 2rem;
+}
+
+
+/* ===============About Us Page ============= */
+.about-hero {
+  position: relative;
+  text-align: center;
+}
+
+.about-hero .section-img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.about-values {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.values-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.value-box {
+  width: 250px;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.about-gallery {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-gallery h2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+}
+
+.team-grid .division-block {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.division-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.member-placeholder {
+  display: none; /* 旧的占位逻辑隐藏 */
+}
+
+/* 新的成员卡片容器 */
+.team-member-card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 100px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 成员头像样式 */
+.team-member-photo {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+
+/* ===== Sponsor Page Section ===== */
+.sponsor-page-section {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background-color: #fff;
+}
+
+.sponsor-page-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.sponsor-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsor-page-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3 / 2;
+}
+
+.sponsor-page-box img {
+  max-width: 80%;
+  max-height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.sponsor-page-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sponsor-page-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .sponsor-page-box {
+    aspect-ratio: 3 / 2;
+  }
+}
