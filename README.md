@@ -4,10 +4,10 @@
 You'll need:
   - Wordpress (of course you will)
   - Some form of server and database (I assume xampp for this)  
-  - Reccomend this guide:
+  - Recommend this guide:
   https://elementor.com/academy/install-wordpress-xampp/
-  (if you're' a retard like me and forgot user password, just run mysqld --skip-grant-tables to run in safe mode, then reset credentials)
-  - Put the motorsport in the htdocs folder
+  (if you're a retard like me and forgot your password, just run mysqld --skip-grant-tables to run in safe mode, then reset credentials)
+  - Put the motorsport folder in htdocs
   - Enter Localhost to access Wordpress
 <h3>2. Add-ons:
 There're a few add-ons that I used in this site. Make sure that they're activated if you want this run normally:
